@@ -1,0 +1,32 @@
+<h2 class="text-primary">Student Form</h2>
+<form class="row g-3 m-5" (submit)="GetDate($event)">
+  <div class="col-md-4">
+    <label for="name" class="form-label">Student name</label>
+    <input type="text" class="form-control is-valid" id="name" name="name" [(ngModel)]="Student.name"  required>
+    <div class="valid-feedback">
+      Looks good!
+    </div>
+  </div>
+  <div class="col-md-4">
+    <label for="address" class="form-label">Student address</label>
+    <input type="text" class="form-control is-valid" id="address" name="address" [(ngModel)]="Student.address" required>
+    <div class="valid-feedback">
+      Looks good!
+    </div>
+  </div>
+  <div class="col-md-4">
+    <label for="age" class="form-label">Student age</label>
+    <input type="number" class="form-control is-valid" id="age"  name="age" [(ngModel)]="Student.age"  required>
+    <div class="valid-feedback">
+      Looks good!
+    </div>
+  </div>
+  <div class="col-md-4">
+    <label for="school" class="form-label">Student school</label>
+    <input type="text" class="form-control is-valid" id="school"  name="school"  [(ngModel)]="Student.school"  required>
+    <div class="valid-feedback">
+      Looks good!
+    </div>
+  </div>
+  <button class="btn btn-success">Submit</button>
+</form>
